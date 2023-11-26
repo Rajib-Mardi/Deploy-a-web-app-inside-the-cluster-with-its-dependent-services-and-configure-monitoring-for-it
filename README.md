@@ -1,5 +1,8 @@
-Demo Project: Configure Monitoring for Own Application Technologiesused: Prometheus, Kubernetes, Node.js, Grafana, Docker, Docker Hub Project Description:
+### Project: 
+* Configure Monitoring for Own Application
+### Technologiesused: Prometheus, Kubernetes, Node.js, Grafana, Docker, Docker Hub 
 
+### Project Description:
 
 #### Configure our NodeJS application to collect & expose Metrics with Prometheus Client Library
 
@@ -26,13 +29,13 @@ Demo Project: Configure Monitoring for Own Application Technologiesused: Prometh
   
 * Create Kubernetes Configuration file ```- Ref k8s-config.yaml```
   * Apply the configuration file
-    ```
-    - kubectl apply -f k8s-config.yaml
-    ```
+  ```
+  - kubectl apply -f k8s-config.yaml
+  ```
 
 <img src="https://github.com/Rajib-Mardi/nodejs-app-monitoring/assets/96679708/f4a3c960-06d1-4c09-9f67-7db410d5c2c4" width="750">
 
-Port-forward the service nodeapp
+* Port-forward the service nodeapp
 ```
 - kubectl port-forward service/nodeapp 3000:3000
 ```

@@ -1,6 +1,7 @@
 ### Project: 
 * Configure Monitoring for Own Application
 ### Technologiesused:
+
 * Prometheus, Kubernetes, Node.js, Grafana, Docker, Docker Hub 
 
 ### Project Description:

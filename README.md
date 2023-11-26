@@ -3,16 +3,16 @@ Demo Project: Configure Monitoring for Own Application Technologiesused: Prometh
 
 #### Configure our NodeJS application to collect & expose Metrics with Prometheus Client Library
 
-Metrics
-1. no.of requests
-2. durations of requests
+* Metrics of the application to be exposed.
+1. no.of requests -the number of requests the application is getting and to check the load of the application.
+2. durations of requests - How long does the application take to handle the requests?
 
-
-Build Docker Image from the application
+#### Build Own Application 
+* Build Docker Image from the application
 ```
 - docker build -t rajibmardi/repo:nodeapp .
 ```
-push  the Docker Image   to private repository
+* push  the Docker Image   to private repository
 ```
 - docker push  rajibmardi/repo:nodeapp .
 ```
@@ -53,14 +53,12 @@ Port-forward the service nodeapp
 - kubectl apply -f own-app-service-monitor.yaml
 ```
 
-* check the Target on prometheus ui
-
-
+* check the Target on prometheus uI
 
 <img src="https://github.com/Rajib-Mardi/nodejs-app-monitoring/assets/96679708/2230fa80-30cd-4d01-9efa-7b2f73784de6" width="750">
 
 * Create Dashboard on Grafana UI
-   *  Goto Grafana UI => Click on new Dashboard
+   *  Go to Grafana UI => Click on new Dashboard
     * Add a new Panal => Give it name "Request per second"
     * Run the prom query rate(http_request_operations_total[2m]) to get data for above panel
     * Save the panel
@@ -70,7 +68,7 @@ Port-forward the service nodeapp
     * Save the panel
     * This query will return duration on the application
  
-Graph for NodeApp
+#### Graph for NodeApp
 
 
 

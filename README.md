@@ -29,8 +29,8 @@ push  the Docker Image   to private repository
     ```
     - kubectl apply -f k8s-config.yaml
     ```
-    
-![kubectl 23-11-2023 22_06_38](https://github.com/Rajib-Mardi/nodejs-app-monitoring/assets/96679708/f4a3c960-06d1-4c09-9f67-7db410d5c2c4)
+
+<img src="https://github.com/Rajib-Mardi/nodejs-app-monitoring/assets/96679708/f4a3c960-06d1-4c09-9f67-7db410d5c2c4" width="750">
 
 Port-forward the service nodeapp
 ```
@@ -39,7 +39,10 @@ Port-forward the service nodeapp
 
 * Metrics exposed and being tracked
 
-  ![127 0 0 1_3000_metrics - Google Chrome 23-11-2023 22_07_39](https://github.com/Rajib-Mardi/nodejs-app-monitoring/assets/96679708/ec9f7b04-8e99-43bd-b609-24ed98674773)
+
+
+
+  <img src="https://github.com/Rajib-Mardi/nodejs-app-monitoring/assets/96679708/ec9f7b04-8e99-43bd-b609-24ed98674773" width="750">
 
 
 #### Configure Prometheus to scrape this exposed metrics and visualize it in Grafana Dashboard
@@ -52,16 +55,23 @@ Port-forward the service nodeapp
 
 * check the Target on prometheus ui
 
-  ![Prometheus Time Series Collection and Processing Server and 25 more pages - Profile 1 - Microsoft​ Edge 24-11-2023 00_10_28](https://github.com/Rajib-Mardi/nodejs-app-monitoring/assets/96679708/2230fa80-30cd-4d01-9efa-7b2f73784de6)
 
+
+<img src="https://github.com/Rajib-Mardi/nodejs-app-monitoring/assets/96679708/2230fa80-30cd-4d01-9efa-7b2f73784de6" width="750">
 
 * Create Dashboard on Grafana UI
-  1.Goto Grafana UI => Click on new Dashboard
-Add a new Panal => Give it name "Request per second"
-Run the prom query rate(http_request_operations_total[2m]) to get data for above panel
-Save the panel
-This query will return per second load on the application
-Add a new Panal => Give it name "Request Duration"
-Run the prom query rate(http_request_duration_seconds_sum[2m]) to get data for above panel
-Save the panel
-This query will return duration on the application
+   *  Goto Grafana UI => Click on new Dashboard
+    * Add a new Panal => Give it name "Request per second"
+    * Run the prom query rate(http_request_operations_total[2m]) to get data for above panel
+    * Save the panel
+    * This query will return per second load on the application
+    * Add a new Panal => Give it name "Request Duration"
+    * Run the prom query rate(http_request_duration_seconds_sum[2m]) to get data for above panel
+    * Save the panel
+    * This query will return duration on the application
+ 
+Graph for NodeApp
+
+
+
+<img src="https://github.com/Rajib-Mardi/nodejs-app-monitoring/assets/96679708/1f9ce03a-b86c-43bc-a60f-589346efa6fe" width="750">

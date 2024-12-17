@@ -16,7 +16,7 @@ ________________________________________________________________________________
 #### Configure our NodeJS application to collect & expose Metrics with Prometheus Client Library
 
 * Metrics of the application to be exposed.
-1. no.of requests -the number of requests the application is getting and to check the load of the application.
+1. no.of requests - the number of requests the application is getting and to check the load of the application.
 2. durations of requests - How long does the application take to handle the requests?
 
 #### Build Own Application 

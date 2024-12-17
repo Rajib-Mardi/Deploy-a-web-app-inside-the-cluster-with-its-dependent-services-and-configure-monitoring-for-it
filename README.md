@@ -6,7 +6,7 @@
 _________________________________________________________________________________
 
 ### Project: 
-* Configure Monitoring for Own Application
+* Deploy a web app inside the cluster with its dependent services and configure monitoring for it
 ### Technologiesused:
 
 * Prometheus, Kubernetes, Node.js, Grafana, Docker, Docker Hub 

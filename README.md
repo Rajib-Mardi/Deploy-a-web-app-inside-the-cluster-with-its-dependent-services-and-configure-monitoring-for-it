@@ -1,4 +1,3 @@
-### Deploy a web app inside the cluster with its dependent services and configure monitoring for it
 
 <img src="https://github.com/Rajib-Mardi/Monitoring-with-Prometheus/assets/96679708/0a39c835-faa8-433c-90d5-429c503c0b7d" width="70">         <img src="https://github.com/Rajib-Mardi/Monitoring-with-Prometheus/assets/96679708/bfeafcb7-7498-4d1c-816c-a7902c9359c4" width="295"> 
 

@@ -58,10 +58,10 @@ ________________________________________________________________________________
 
 #### Configure Prometheus to scrape this exposed metrics and visualize it in Grafana Dashboard
 #### configure monitoring
-* Create ServiceMonitor metrics-configuration file ```- Ref own-app-service-monitor.yaml```
+* Create ServiceMonitor metrics-configuration file ```- Ref /k8s-config.yaml```
 * Apply the service monitor configuration file
 ```
-- kubectl apply -f own-app-service-monitor.yaml
+- kubectl apply -f /k8s-config.yaml
 ```
 
 * check the Target on prometheus uI
